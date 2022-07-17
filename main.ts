@@ -52,13 +52,13 @@ console.log(getFourNumsAndReturnSum(2.2,1.4,6.5,7.7));
 8.
 let numsArray:number[]=[7,2,5,6]
 function getArrayNumberAndReturnMin():number{
-  let x:number = numsArray[0];
+  let someNumber:number = numsArray[0];
   numsArray.forEach(element=> {
-  if(element<x){
-    x=element
+  if(element<someNumber){
+    someNumber=element
   }  
 });
-return x;
+return someNumber;
 }
 getArrayNumberAndReturnMin()
 
@@ -89,19 +89,27 @@ returnNameFromArray(["lior","eldad","abynech","daniel"]);
 
 12.
 function returnIfStartWithSomeKey(nameArray:string[]):string{
-    let x:string[]=[];
+    let soneTextArr:string[]=[];
 nameArray.forEach((item)=>{
   if(item[0]==="A"){
-    x+=item
+    soneTextArr+=item
   }
 })
-  return x;
+  return soneTextArr;
 }
 console.log(returnIfStartWithSomeKey(["Lior","David","Yos","Avi"]));
 
 13.
 
+function checksIfArrayHasModuloNumber(someNumsArray:number[]):string{
+  someNumsArray.forEach((item)=>{
+    if(item%2==0){
+      return alert(true)
+    }
+    return false
+  })
+}
+checksIfArrayHasModuloNumber([4.2,2.5,6.6,7.1]);
 
 
-
-
+14.
