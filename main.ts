@@ -102,14 +102,27 @@ console.log(returnIfStartWithSomeKey(["Lior","David","Yos","Avi"]));
 13.
 
 function checksIfArrayHasModuloNumber(someNumsArray:number[]):string{
+  let rndNum:number[]=[];
   someNumsArray.forEach((item)=>{
     if(item%2==0){
-      return alert(true)
+      alert(true);
+      rndNum.push(item);
     }
-    return false
   })
+  return rndNum
 }
 checksIfArrayHasModuloNumber([4.2,2.5,6.6,7.1]);
 
 
 14.
+
+
+15.
+function getTextNumTimes(text : string, num : number):void{
+    for(let i=0; i<num+1; i++){
+        console.log(i,text)
+    }
+    return "Fuck of"
+}
+getTextNumTimes("lior",5);
+
