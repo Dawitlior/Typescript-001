@@ -126,3 +126,43 @@ function getTextNumTimes(text : string, num : number):void{
 }
 getTextNumTimes("lior",5);
 
+16.
+function getNameAndAgeAndPrint(name:string,age:number):string{
+  if(age<18){
+    return `welcome ${name}`;
+  }
+  else{
+    return `No entry ${name}`;
+  }
+}
+17.
+function getFirstNameAndLastName(fName:string,lName:string):any{
+  let letter:string="A"
+if(fName[0]== letter && lName[0]==letter){
+return letter;
+}
+else{
+return 0
+}
+}
+getFirstNameAndLastName("Avi","Ali");
+
+
+18.
+function getArrayAndCheckArray(myArray:string[]):string{
+let someTempArr:number=myArray.length;
+switch(someTempArr){
+  case 0:
+  return "no information";
+  case 1:
+  return "one item"
+  case 2:
+  return "couple items";
+  default:
+  return "many items";
+}
+}
+console.log(getArrayAndCheckArray(["gorilla","glue","lemon-hize"]));
+
+19.
+
