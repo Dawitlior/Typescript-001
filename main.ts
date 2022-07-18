@@ -101,7 +101,7 @@ console.log(returnIfStartWithSomeKey(["Lior","David","Yos","Avi"]));
 
 13.
 
-function checksIfArrayHasModuloNumber(someNumsArray:number[]):string{
+function checksIfArrayHasModuloNumber(someNumsArray:number[]):number[]{
   let rndNum:number[]=[];
   someNumsArray.forEach((item)=>{
     if(item%2==0){
@@ -117,7 +117,7 @@ checksIfArrayHasModuloNumber([4.2,2.5,6.6,7.1]);
 14.
 
 function getSomeDate(someTextDate:string):string{
-let rndDate=new Date();
+let rndDate:any=new Date();
 return rndDate=someTextDate;
 }
 console.log(getSomeDate("12:30:45 4-4-2004"));
@@ -128,7 +128,6 @@ function getTextNumTimes(text : string, num : number):void{
     for(let i=0; i<num+1; i++){
         console.log(i,text)
     }
-    return "Fuck of"
 }
 getTextNumTimes("lior",5);
 
