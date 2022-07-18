@@ -1,26 +1,26 @@
-// let number1:number=6;
-// let booli:boolean=false;
-// let colorsArray:["blue","green","black"];
+let number1:number=6;
+let booli:boolean=false;
+let colorsArray:["blue","green","black"];
 
 
-// let myInput:any=document.getElementById("put1");
+let myInput:any=document.getElementById("put1");
 
-// function printNumberToConsole(myInput:number):void{
-// if(myInput<10){
-//     console.log("greater then 10");
-// }
-// else{
-//     console.log("less then 10");
-// }
-// }
+function printNumberToConsole(myInput:number):void{
+if(myInput<10){
+    console.log("greater then 10");
+}
+else{
+    console.log("less then 10");
+}
+}
+//NOT FINISH
+let input2:any=document.getElementById("put2");
+function printNumbersToConsole(input2:string):void{
+    if(input2>10){
+        console.log("greater then 10");
+    }
 
-// let input2:any=document.getElementById("put2");
-// function printNumbersToConsole(input2):void{
-//     if(input2>10){
-//         console.log("greater then 10");
-//     }
-
-// }
+}
 
 4.
 function getNumbersAndReturn(num1:number,num2:number):number{
