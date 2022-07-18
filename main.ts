@@ -175,22 +175,38 @@ switch(rndText){
   case "revers":
   return somenumsArr.reverse();
   case "ascending order":
-  return somenumsArr.sort((a,b)=> b-a)
+  return somenumsArr.sort((a,b)=> {b-a});
   case "descending":
-  return somenumsArr.sort((a,b)=>{a-b});
+  return somenumsArr.sort((a,b)=> {a-b});
   default:
   return somenumsArr;
   case String:
-  return somenumsArr:string[] 
-}  
-
+  return somenumsArr:string[];
+}
 }
 console.log(getNumsArrayAndText([3,5,7,9],"revers"));
 
 20.
 function getRandomArray(randomArr:any[]):any{
-switch(){
+   let stringArray: string[] = [];
+    let numberArray: number[] = [];
+    let booleanArray: boolean[] = [];
+    randomArr.forEach((item)=>{
+      switch(typeof(item)){
+        case "number":
+          stringArray.push(item);
+          break;
+          case "string":
+            numberArray.push(item);
+            break;
+            case "boolean":
+              booleanArray.push(item);
+              break;
+              default:
+                console.log("hello nothing");
+                
+      }
+    })
 
-}
 }
 getRandomArray([5,true,"black"]);
