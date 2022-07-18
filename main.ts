@@ -188,7 +188,9 @@ switch(rndText){
 console.log(getNumsArrayAndText([3,5,7,9],"revers"));
 
 
-function getRandomArray(randomArr:any[]):{
-
+function getRandomArray(randomArr:any[]):any{
+switch(){
+  
 }
-getRandomArray([2,"hello",5,2,"black"]);
+}
+getRandomArray([5,true,"black"]);
