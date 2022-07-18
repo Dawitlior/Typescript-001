@@ -116,6 +116,12 @@ checksIfArrayHasModuloNumber([4.2,2.5,6.6,7.1]);
 
 14.
 
+function getSomeDate(someTextDate:string):string{
+let rndDate=new Date();
+return rndDate=someTextDate;
+}
+console.log(getSomeDate("12:30:45 4-4-2004"));
+
 
 15.
 function getTextNumTimes(text : string, num : number):void{
