@@ -150,8 +150,7 @@ getFirstNameAndLastName("Avi","Ali");
 
 18.
 function getArrayAndCheckArray(myArray:string[]):string{
-let someTempArr:number=myArray.length;
-switch(someTempArr){
+switch(myArray.length){
   case 0:
   return "no information";
   case 1:
@@ -165,4 +164,18 @@ switch(someTempArr){
 console.log(getArrayAndCheckArray(["gorilla","glue","lemon-hize"]));
 
 19.
+function getNumsArrayAndText(somenumsArr:number[],rndText:string):number{
+switch(rndText){
+  case "revers":
+  return somenumsArr.reverse();
+  case "ascending order":
+  return somenumsArr.sort((a,b)=> b-a)
+  case "descending":
+  return somenumsArr.sort((a,b)=>{a-b});
+  default:
+  return somenumsArr;
+}
+}
+console.log(getNumsArrayAndText([3,5,7,9],"revers"));
+
 
