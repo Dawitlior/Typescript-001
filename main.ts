@@ -109,7 +109,7 @@ function checksIfArrayHasModuloNumber(someNumsArray:number[]):string{
       rndNum.push(item);
     }
   })
-  return rndNum
+  return rndNum;
 }
 checksIfArrayHasModuloNumber([4.2,2.5,6.6,7.1]);
 
@@ -180,8 +180,15 @@ switch(rndText){
   return somenumsArr.sort((a,b)=>{a-b});
   default:
   return somenumsArr;
-}
+  case String:
+  return somenumsArr:string[] 
+}  
+
 }
 console.log(getNumsArrayAndText([3,5,7,9],"revers"));
 
 
+function getRandomArray(randomArr:any[]):{
+
+}
+getRandomArray([2,"hello",5,2,"black"]);
