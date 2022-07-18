@@ -180,8 +180,8 @@ switch(rndText){
   return somenumsArr.sort((a,b)=> {a-b});
   default:
   return somenumsArr;
-  case String:
-  return somenumsArr:string[];
+  case "string":
+  return somenumsArr:string[]
 }
 }
 console.log(getNumsArrayAndText([3,5,7,9],"revers"));
@@ -194,19 +194,18 @@ function getRandomArray(randomArr:any[]):any{
     randomArr.forEach((item)=>{
       switch(typeof(item)){
         case "number":
-          stringArray.push(item);
+          numberArray.push(item);
           break;
           case "string":
-            numberArray.push(item);
+            stringArray.push(item);
             break;
             case "boolean":
               booleanArray.push(item);
               break;
               default:
-                console.log("hello nothing");
-                
+                console.log("hello nothing");         
       }
-    })
-
+    });
+    console.log(stringArray,numberArray,booleanArray);
 }
 getRandomArray([5,true,"black"]);
