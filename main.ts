@@ -187,10 +187,10 @@ switch(rndText){
 }
 console.log(getNumsArrayAndText([3,5,7,9],"revers"));
 
-
+20.
 function getRandomArray(randomArr:any[]):any{
 switch(){
-  
+
 }
 }
 getRandomArray([5,true,"black"]);
