@@ -205,6 +205,6 @@ function getRandomArray(randomArr:any[]):any{
                 console.log("hello nothing");         
       }
     });
-    console.log(stringArray,numberArray,booleanArray);
+    return randomArr;
 }
 getRandomArray([5,true,"black"]);
