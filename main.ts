@@ -286,42 +286,6 @@ function calac(num1?: number,): number {
 }
 calac(6)//11
 
-// class Cat {
-//   nameofcat: string;
-//   age: number;
-//   color: string;
-//   private ownerName: string;
-//   constructor(name_of_cat: string, age: number, color: string) {
-//     this.nameofcat = name_of_cat;
-//     this.age = age;
-//     this.color = color;
-//   }
-//   get getOwnerName(): string {
-//     return this.ownerName;
-//   }
-//   set setOwnerName(name: string) {
-//     name.length < 5 ? this.ownerName = name : console.log("need at list 5 letters");
-
-//   }
-// }
-// let newCatObject: Cat = new Cat("sama", 12, "blacl");
-// console.log(newCatObject);
-
-
-// class Cat{
-
-//   private ownerName:string = "";
-
-//   get getOwnerName():string{
-//     return this.ownerName;
-//   }
-//   set setOwnerName(name:string){
-//     name.length<5?this.ownerName=name:console.log("need at list 5 letters");
-//   }
-// }
-// let newCatObject:Cat = new Cat();
-// console.log(newCatObject.setOwnerName="mike");
-
 34.
 class Car {
   company: string;
